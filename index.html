@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header onclick="cliquei()">
         <h1>Cadastro de Clientes</h1>
     </header>
     <main>
         <div id="div-da-lista">
-            <ul>CADASTRAR
+            <ul><p id="titulo_ul">CADASTRAR</p>
                 <li>
                     <form>
-                        <input type="text" id="inNome" placeholder="Nome" required>
+                        <input type="text" id="inNome" placeholder="Nome" data-index="new" required>
 
                         <input type="email" id="inEmail" placeholder="E-mail" required>
 
                         <input type="tel" id="inCelular" placeholder="Telefone" required>
 
                         <input type="text" id="inCidade" placeholder="Cidade" required>
-                        <input type="submit" value="CADASTRAR">
+                        <input type="submit" id="botão" value="CADASTRAR">
                     </form>
-                </li>
+                </li>                                
             </ul>
         </div>
-        <div id="div-do-conteudo">
-            <header id="campos">
-                <p>Nome</p>
-                <p>E-mail</p>
-                <p>Celular</p>
-                <p>Cidade</p>
-                <p>Ação</p>
-            </header>
-            <div id="conta1" class="contas"></div>
-            <div id="conta2" class="contas"></div>
-            <div id="conta3" class="contas"></div>
-            <div id="conta4" class="contas"></div>
-            <div id="conta5" class="contas"></div>
+        <div id="div-do-conteudo" onclick="cliquei()">
+                <table id="tabela">
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <th>Ação</th>
+                    </tr>
+                    <tbody>
+
+                    </tbody>
+                </table>
         </div>
     </main>
-    <footer>
+    <footer onclick="cliquei()">
     
     </footer>
 <script src="script.js"></script>
