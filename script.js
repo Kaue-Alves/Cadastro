@@ -95,7 +95,6 @@ const editClient = (index) => {
     document.querySelector('#inCidade').dataset.index = client.index;
 };
 
-//----------------------------------------------------
 // Função para salvar as edições de um cliente
 const saveEdit = () => {
     const index = document.querySelector('#inNome').dataset.index;
@@ -117,7 +116,6 @@ const saveEdit = () => {
 
 // Adicionar um ouvinte de evento ao botão de "Salvar"
 document.querySelector('#botaoSalvar').addEventListener('click', saveEdit);
-//----------------------------------------------------
 
 // Função para lidar com a edição e exclusão de clientes
 const editDelete = (event) => {
