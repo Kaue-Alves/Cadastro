@@ -33,7 +33,6 @@ const clearTable = () => {
     }
 };
 
-
 // Função para criar uma linha na tabela com dados de um cliente
 const createRow = (client, index) => {
     const newRow = document.createElement('tr');
