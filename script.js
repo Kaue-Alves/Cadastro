@@ -1,5 +1,4 @@
 const formulário = document.querySelector('form');
-const lista = [];
 
 // Função para limpar os campos de entrada após a edição ou criação
 const clearInputs = () => {
